@@ -1,0 +1,23 @@
+#!/bin/bash
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m'
+list=($(find /root/ -type d -name ".transcendence_*" | cut -d "_" -f 2 | sort -h ))
+for i in ${!list[@]}; do
+  /root/bin/transcendence-cli_${list[$i]}.sh mnsync status &>/dev/null
+  if [[ $? == 0 ]]
+  then
+    result=$(/root/bin/transcendence-cli_${list[$i]}.sh mnsync status | jq '.IsBlockchainSynced')
+    if [ $result == "\"false\"" ]
+    then
+      echo -e "${RED}  ${list[$i]} -- $result${NC}"
+    else
+      echo -e "${GREEN}  ${list[$i]} -- $result${NC}"
+    fi
+  else
+    /root/bin/transcendence-cli_${list[$i]}.sh mnsync status 2> /tmp/errorout
+    result=$(cat /tmp/errorout)
+    echo -e "${GREEN}  ${list[$i]} -- $result${NC}"
+  fi
+done
+rm -f /tmp/errorout
