@@ -369,11 +369,20 @@ then
   echo "${ALIAS}_getpeerinfo"
   echo "${ALIAS}_resync"
   echo "${ALIAS}_reindex"
+  echo ""
+  echo "Also can use these commands to check all nodes status"
+  echo "mnstats - For masternodes status"
+  echo "mnblocks - For block counts"
+  echo "mnaddress - For addresses"
+  echo "mnconns - For connection counts"
+  echo "mnsync - For masternode sync status"
+
 fi
 echo ""
 echo "Made by lobo & xispita with the help of all Transcendence team "
 echo "lobo's Transcendence Address for donations: GWe4v6A6tLg9pHYEN5MoAsYLTadtefd9o6"
-echo "xispita's Transcendence Address for donations: GRDqyK7m9oTsXjUsmiPDStoAfuX1H7eSfh" 
+echo "xispita's Transcendence Address for donations: GRDqyK7m9oTsXjUsmiPDStoAfuX1H7eSfh"
+echo "murtzsarialtun's Transcendence Address for donations: GPN1TfeKBr4CN2b4znigohGf1bLxoxLNVP"
 echo "Bitcoin Address for donations: 1NqYjVMA5DhuLytt33HYgP5qBajeHLYn4d"
 exec bash
 exit
