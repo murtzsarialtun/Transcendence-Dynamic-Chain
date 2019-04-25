@@ -63,11 +63,11 @@ then
     rm Linux.zip
     mkdir /root/bin
     touch /root/bin/$version
-    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnaddress -O /root/bin/
-    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnblocks -O /root/bin/
-    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnstats -O /root/bin/
-    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnsync -O /root/bin/
-    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnconns -O /root/bin/
+    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnaddress -O /root/bin/mnaddress
+    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnblocks -O /root/bin/mnblocks
+    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnstats -O /root/bin/mnstats
+    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnsync -O /root/bin/mnsync
+    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnconns -O /root/bin/mnconns
     chmod +x /root/bin/mn*
     echo -e "${GREEN}Wallet updated. Please restart your nodes or reboot your VPS when possible.${NC}"
     echo ""
@@ -184,11 +184,11 @@ then
     fi
     unzip Linux.zip -d /usr/local/bin 
     chmod +x /usr/local/bin/transcendence*
-    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnaddress -O /root/bin/
-    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnblocks -O /root/bin/
-    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnstats -O /root/bin/
-    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnsync -O /root/bin/
-    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnconns -O /root/bin/
+    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnaddress -O /root/bin/mnaddress
+    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnblocks -O /root/bin/mnblocks
+    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnstats -O /root/bin/mnstats
+    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnsync -O /root/bin/mnsync
+    wget https://raw.githubusercontent.com/murtzsarialtun/Transcendence-Dynamic-Chain/master/mnconns -O /root/bin/mnconns
     chmod +x /root/bin/mn*
     rm Linux.zip
     apt-get install -y ufw 
