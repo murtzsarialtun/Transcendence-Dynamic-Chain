@@ -17,7 +17,7 @@ for i in ${!list[@]}; do
   else
     /root/bin/transcendence-cli_${list[$i]}.sh mnsync status 2> /tmp/errorout
     result=$(cat /tmp/errorout)
-    echo -e "${GREEN}  ${list[$i]} -- $result${NC}"
+    echo -e "${RED}  ${list[$i]} -- $result${NC}"
   fi
 done
 rm -f /tmp/errorout
